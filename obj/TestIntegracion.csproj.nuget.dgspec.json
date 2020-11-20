@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dev\\TestIntegracion\\TestIntegracion\\TestIntegracion.csproj": {}
+    "D:\\Dev\\TestIntegracion\\TestIntegracion.csproj": {}
   },
   "projects": {
-    "D:\\Dev\\TestIntegracion\\TestIntegracion\\TestIntegracion.csproj": {
+    "D:\\Dev\\TestIntegracion\\TestIntegracion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev\\TestIntegracion\\TestIntegracion\\TestIntegracion.csproj",
+        "projectUniqueName": "D:\\Dev\\TestIntegracion\\TestIntegracion.csproj",
         "projectName": "TestIntegracion",
-        "projectPath": "D:\\Dev\\TestIntegracion\\TestIntegracion\\TestIntegracion.csproj",
+        "projectPath": "D:\\Dev\\TestIntegracion\\TestIntegracion.csproj",
         "packagesPath": "C:\\Users\\DemianPC\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev\\TestIntegracion\\TestIntegracion\\obj\\",
+        "outputPath": "D:\\Dev\\TestIntegracion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -30,6 +30,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -41,6 +42,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -65,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -20,17 +20,13 @@ namespace TestIntegracion.Controllers
             {
                 XmlDocument xmlDoc = new XmlDocument();
                 xmlDoc.Load("Technical Test - File 1.txt");
-                var path = "methodResponse/params/param";
 
                 var stringText = string.Empty;
-                foreach (XmlNode item in xmlDoc.SelectNodes(path))
+                foreach (XmlNode item in xmlDoc.ChildNodes)
                 {
-                    if (string.IsNullOrEmpty(item.InnerText))
-                        throw new Exception("The item String not contain Text");
-                    else
-                    {
-                       stringText = item.InnerText;
-                    }
+                     stringText = XmlNodes.FindText(item);
+                    if(!string.IsNullOrEmpty(stringText))
+                        break;
                 }
 
                 return Ok(stringText);
@@ -40,6 +36,8 @@ namespace TestIntegracion.Controllers
                 return BadRequest(ex);
             }
         }
+
+        
 
     }
 }
